@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>HTTP Requests - Step 4</title>
+    <title>HTTP Requests - Step 5</title>
   </head>
   <body>
     <pre>
 
-Mission successful! You have successfully implemented the function with a
-callback, so now you can not only pass in different URLs as arguments, you can
-feed the function different instructions.
+Yay, now your function is nested happily in its own little module, and as such,
+it is completely modular. You could require this module in all sorts of files,
+and tell it to do all sorts of crazy wild unimaginable things.
 
-Which we'll be doing, just as soon as you create a module for your function.
+Or, the slightly less crazy, not exactly wild, and entirely imaginable things
+we'll be doing (but gotta hype it up, right?) now that we have this cool module
+we can require.
 
 Make sure you commit before you start the next Step!
 
