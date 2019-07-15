@@ -1,13 +1,14 @@
 const https = require('https');
 
-function getAndPrintHTML () {
-  let responseData = '';
-  const requestOptions = {
-    host: 'sytantris.github.io',
-    path: '/http-examples/step2.html'
-  };
+const requestOptions = {
+  host: 'sytantris.github.io',
+  path: '/http-examples/step2.html'
+};
 
-  https.get(requestOptions, (res) => {
+function getAndPrintHTML (options) {
+  let responseData = '';
+
+  https.get(options, (res) => {
 
     res.on('data', (data) => {
       responseData += data;
@@ -20,4 +21,6 @@ function getAndPrintHTML () {
   });
 }
 
-getAndPrintHTML();
+// getAndPrintHTML(requestOptions);
+getAndPrintHTML({host: 'sytantris.github.io', path: '/http-examples/step3.html'});
+// getAndPrintHTML('https://sytantris.github.io/http-examples/step3.html');
